@@ -5,4 +5,25 @@
  */
 function linkedListGenerator(){
 
-}
+   return {
+    getHead: function(){
+      return {
+        value: value,
+        next: {}
+      };
+    },
+    getTail: function(){},
+    add: function(){},
+    remove: function(){},
+    get: function(){},
+    insert: function(){},
+
+      };
+
+
+
+
+
+};
+
+var books = linkedListGenerator();
