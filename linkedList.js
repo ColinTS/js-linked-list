@@ -69,8 +69,24 @@ function linkedListGenerator(){
       return false;
     }
 
-    function insert(){
+    function insert(book, n){
 
+        var newNode = {
+          value: book,
+          next: null
+        };
+
+        if(get(n) === false || n < 0){
+          return false;
+        } else if(n === 0){
+            newNode.next = head;
+            head = newNode;
+        } else {
+          var nodeInsert = get(n);
+          newNode.next = nodeInsert;
+          var preNode = get(n-1);
+          preNode.next = newNode;
+      }
 
     }
 
