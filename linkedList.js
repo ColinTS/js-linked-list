@@ -36,14 +36,17 @@ function linkedListGenerator(){
     }
 
     function remove(n){
-        //removing node
         if(get(n) === false){
           return false;
         }
         else if(get(n) === getTail()){
           get(n-1).next = null;
           tail = get(n-1);
-        } else{
+        }
+        else if(get(n) === getHead()){
+          head = get(n+1);
+
+        }else {
             var nodeToRemove = get(n);
             var preNode = get(n-1);
             preNode.next = nodeToRemove.next;
@@ -66,7 +69,10 @@ function linkedListGenerator(){
       return false;
     }
 
-    function insert(){}
+    function insert(){
+
+
+    }
 
 
 
